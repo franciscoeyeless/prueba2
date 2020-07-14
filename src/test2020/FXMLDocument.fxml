@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="test2020.FXMLDocumentController">
+    <children>
+      <HBox alignment="CENTER" prefHeight="70.0" style="-fx-background-color: #ee0000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+              <Label fx:id="label" minHeight="16" minWidth="69">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0" style="-fx-background-color: #ff0000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="texto1" prefWidth="500.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="texto2" prefWidth="500.0" HBox.hgrow="ALWAYS" />
+              <Button fx:id="button" onAction="#handleButtonAction" opacity="0.5" prefWidth="500.0" text="Clic" textFill="#b50f00" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#faff9d" height="44.72" radius="22.6025" width="47.69" />
+               </effect>
+            </Button>
+            <Button fx:id="boton2" mnemonicParsing="false" onAction="#boton2Accion" opacity="0.5" prefWidth="500.0" text="Clic" textFill="#b50f00" HBox.hgrow="ALWAYS" />
+            <Button fx:id="boton3" mnemonicParsing="false" onAction="#boton3Accion" opacity="0.5" prefWidth="500.0" text="Clic" textFill="#b50f00" HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+    </children>
+</AnchorPane>
